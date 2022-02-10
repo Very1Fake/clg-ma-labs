@@ -69,10 +69,11 @@ impl Game {
             let mut points = Vec::new();
             self.matrix.iter().enumerate().for_each(|(i, row)| {
                 row.iter().enumerate().for_each(|(j, val)| {
-                    if *val == self.max_min {
-                        if self.a_min[i] == self.max_min && self.b_max[j] == self.min_max {
-                            points.push((i, j));
-                        }
+                    if *val == self.max_min
+                        && self.a_min[i] == self.max_min
+                        && self.b_max[j] == self.min_max
+                    {
+                        points.push((i, j));
                     }
                 })
             });
