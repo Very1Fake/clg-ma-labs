@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
 <head>
-    <title>MA: Lab 6</title>
+    <title>MA: Labs</title>
 
     <!-- Powered by egui: https://github.com/emilk/egui/ -->
 
@@ -103,12 +103,12 @@
         Loading…&nbsp;&nbsp;
         <div class="lds-dual-ring"></div>
     </div>
-    <script src="lab_6.js"></script>
+    <script src="ma_labs.js"></script>
     <script>
         // We'll defer our execution until the wasm is ready to go.
         // Here we tell bindgen the path to the wasm file so it can start
         // initialization and return to us a promise when it's done.
-        wasm_bindgen("./lab_6_bg.wasm")
+        wasm_bindgen("./ma_labs_bg.wasm")
             .then(on_wasm_loaded)
             .catch(console.error);
 
